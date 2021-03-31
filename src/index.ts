@@ -1,5 +1,5 @@
-import { GetWeatherHandler } from "src/domain-layer/use-cases/queries/get-weather/get-weather-handler";
-import { MemoryRepository } from "src/data-layer/repositories/memory-repository";
+import { GetWeatherHandler } from "@domain/use-cases/queries/get-weather/get-weather-handler";
+import { MemoryRepository } from "@data/repositories/memory-repository";
 
 const interactor = new GetWeatherHandler(
   new MemoryRepository()

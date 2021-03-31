@@ -1,3 +1,3 @@
-import { WeatherEntity } from "src/domain-layer/entities/weather-entity";
+import { WeatherEntity } from "@domain/entities/weather-entity";
 
 export class FilterWeatherResponse extends Array<WeatherEntity> { }
