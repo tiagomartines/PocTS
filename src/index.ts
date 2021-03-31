@@ -1,6 +1,8 @@
-import { GetWeatherInteractor } from "./get-weather-interactor";
-import { WeatherRepository } from "./weather-repository";
+import { GetWeatherHandler } from "src/domain-layer/use-cases/queries/get-weather/get-weather-handler";
+import { MemoryRepository } from "src/data-layer/repositories/memory-repository";
 
-let repository = new WeatherRepository();
-let interactor = new GetWeatherInteractor(repository);
-console.log(interactor.handle('São Paulo'));
+const interactor = new GetWeatherHandler(
+  new MemoryRepository()
+);
+
+console.log(interactor.handle("São Paulo"));

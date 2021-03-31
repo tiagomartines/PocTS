@@ -4,6 +4,8 @@
   "main": "index.ts",
   "license": "MIT",
   "devDependencies": {
+    "reflect-metadata": "^0.1.13",
+    "tsyringe": "^4.5.0",
     "typescript": "^4.2.3"
   }
 }
