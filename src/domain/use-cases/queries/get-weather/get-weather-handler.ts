@@ -3,9 +3,9 @@ import { RequestHandler } from "@domain/request-handler"
 import { WeatherEntity } from "@domain/entities/weather-entity";
 
 export class GetWeatherHandler implements RequestHandler<string, WeatherEntity> {
-  constructor(private repository: Repository) { }
+  constructor(private _repository: Repository) { }
 
   handle(data: string): WeatherEntity {
-    return this.repository.getWeather("São Paulo");
+    return this._repository.getWeather("São Paulo");
   }
 }

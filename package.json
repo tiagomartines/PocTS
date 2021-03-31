@@ -10,5 +10,9 @@
   },
   "scripts": {
     "build": "tsc --project tsconfig.json && tscpaths -p tsconfig.json -s ./src -o ./dist"
+  },
+  "dependencies": {
+    "inversify": "^5.0.5",
+    "reflect-metadata": "^0.1.13"
   }
 }

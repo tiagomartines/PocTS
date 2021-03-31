@@ -9,8 +9,9 @@
     "baseUrl": ".",
     "paths": {
       "*": ["node_modules/*"],
-      "@domain/*": ["./src/domain-layer/*"],
-      "@data/*": ["./src/data-layer/*"]
+      "@domain/*": ["./src/domain/*"],
+      "@data/*": ["./src/data/*"],
+      "@presentation/*": ["./src/presentation/*"]
     },
     "esModuleInterop": true,
     "skipLibCheck": true,

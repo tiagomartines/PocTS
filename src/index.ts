@@ -1,8 +1,6 @@
-import { GetWeatherHandler } from "@domain/use-cases/queries/get-weather/get-weather-handler";
-import { MemoryRepository } from "@data/repositories/memory-repository";
+import { WeatherPresenter } from "@presentation/presenters/weather-presenter";
 
-const interactor = new GetWeatherHandler(
-  new MemoryRepository()
-);
+const presenter = new WeatherPresenter();
+const json = presenter.getWeather("São Paulo");
 
-console.log(interactor.handle("São Paulo"));
+console.log(json);
